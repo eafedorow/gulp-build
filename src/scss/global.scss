@@ -1,0 +1,32 @@
+
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding+px;
+}
+
+// Body Locked
+body {
+  font-family: $fontPrimary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #404040;
+  &.locked {
+      overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
